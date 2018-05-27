@@ -4,7 +4,7 @@
 #define SCREEN_WIDTH 768
 #define SCREEN_HEIGHT 1024
 
-#define SPLASH_STATE_SHOW_TIME 3.0
-#define SPASH_SCENE_BACKGROUND_FILEPATH "Resources/res/Splash.png"
+#define INTRO_STATE_SHOW_TIME 3.0
+#define INTRO_SCENE_BACKGROUND_FILEPATH "Resources/res/Splash.png"
 
 #endif
