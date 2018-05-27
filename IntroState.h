@@ -1,0 +1,11 @@
+#ifndef FLAPPYBIRDS_INTROSTATE_H
+#define FLAPPYBIRDS_INTROSTATE_H
+
+
+class IntroState {
+
+
+};
+
+
+#endif //FLAPPYBIRDS_INTROSTATE_H
