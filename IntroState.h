@@ -20,7 +20,6 @@ public:
 private:
     GameDataRef data;
     sf::Clock clock; //keep track how much time passsed
-    sf::Texture backgroundTexture;
     sf::Sprite background;
 
 

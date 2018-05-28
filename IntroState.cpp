@@ -4,6 +4,7 @@
 
 #include "IntroState.h"
 #include "DEFINITIONS.h"
+#include "MainMenuState.h"
 #include <sstream>
 #include <iostream>
 
@@ -27,8 +28,7 @@ void IntroState::handleInput() {
 
 void IntroState::update(float dt) {
     if (clock.getElapsedTime().asSeconds() > INTRO_STATE_SHOW_TIME) {
-        std::cout << "Go to Main menu" << std::endl; // I have to implementing main menu
-
+        data->stateMachine.addState(StateRef(new MainMenuState(data)), true);
     }
 }
 
