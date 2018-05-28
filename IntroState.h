@@ -7,7 +7,7 @@
 
 class IntroState : public State {
 public:
-    IntroState(GameDataRef data);
+    explicit IntroState(GameDataRef data);
 
     void init();
 

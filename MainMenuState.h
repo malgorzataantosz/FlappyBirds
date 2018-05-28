@@ -12,7 +12,7 @@
 class MainMenuState : public State {
 
 public:
-    MainMenuState(GameDataRef data);
+    explicit MainMenuState(GameDataRef data);
 
     void init();
 

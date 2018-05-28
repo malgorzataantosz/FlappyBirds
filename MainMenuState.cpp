@@ -4,8 +4,8 @@
 
 #include "MainMenuState.h"
 #include "DEFINITIONS.h"
-#include <sstream>
-#include <iostream>
+#include "GameState.h"
+
 
 MainMenuState::MainMenuState(GameDataRef data) : data(data) {
 
@@ -32,7 +32,7 @@ void MainMenuState::handleInput() {
         }
     }
     if(data->inputManager.isSpriteClicked(playButton,  sf::Mouse::Left, data->window)){
-        std::cout << "Go to Game Screen" << std::endl; // i'll implement game screen later
+        data->stateMachine.addState(StateRef(new GameState(data)), true);
     }
 }
 

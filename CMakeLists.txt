@@ -3,7 +3,7 @@ project(FlappyBirds)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(FlappyBirds main.cpp State.h StateMachine.cpp StateMachine.h AssetManager.cpp AssetManager.h InputManager.cpp InputManager.h Game.cpp Game.h IntroState.cpp IntroState.h MainMenuState.cpp MainMenuState.h)
+add_executable(FlappyBirds main.cpp State.h StateMachine.cpp StateMachine.h AssetManager.cpp AssetManager.h InputManager.cpp InputManager.h Game.cpp Game.h IntroState.cpp IntroState.h MainMenuState.cpp MainMenuState.h GameState.cpp GameState.h)
 # Detect and add SFML
 set(CMAKE_MODULE_PATH "/usr/share/SFML/cmake/Modules/" ${CMAKE_MODULE_PATH})
 #Find any version 2.X of SFML
