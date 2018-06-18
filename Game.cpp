@@ -1,7 +1,10 @@
 #include "Game.h"
 #include "IntroState.h"
+#include <time.h>
+#include <stdlib.h>
 
 Game::Game(int width, int height, std::string title) {
+    srand(time(NULL));
     data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
     data->stateMachine.addState(StateRef(new IntroState(this->data)));
     this->run();

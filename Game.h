@@ -21,7 +21,7 @@ public:
     Game(int width, int height, std::string title);
 private:
     //update per second
-    const float dt = 1.0f /60.0f;
+    const float dt = 1.0f / 60.0f;
     sf::Clock clock;
     GameDataRef data = std::make_shared<GameData>();
     void run();

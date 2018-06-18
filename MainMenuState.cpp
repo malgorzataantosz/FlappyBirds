@@ -1,7 +1,3 @@
-//
-// Created by malgorzata on 23.05.18.
-//
-
 #include "MainMenuState.h"
 #include "DEFINITIONS.h"
 #include "GameState.h"

@@ -4,6 +4,11 @@
 
 
 #include "Game.h"
+#include "Pipe.h"
+#include "Ground.h"
+#include "Bird.h"
+#include "Collision.h"
+#include "HeadupDisplay.h"
 
 class GameState : public State {
 public:
@@ -21,6 +26,19 @@ private:
     GameDataRef data;
 
     sf::Sprite background;
+
+    sf::Clock clock;
+
+    Pipe *pipe;
+
+    Ground *ground;
+
+    Bird *bird;
+    Collision collision;
+    HeadupDisplay *hud;
+
+    int gameState;
+    int score;
 
 };
 
