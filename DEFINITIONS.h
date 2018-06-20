@@ -11,7 +11,8 @@
 #define MAIN_MENU_BACKGROUND_FILEPATH "Resources/res/sky.png"
 
 #define GAME_BACKGROUND_FILEPATH "Resources/res/sky.png"
-#define GAME_OVER_BACKGROUND_FILEPATH "Resources/res/sky.png"
+
+#define GAME_OVER_FILEPATH "Resources/res/game-over.png"
 
 #define GAME_TITLE_FILEPATH "Resources/res/title.png"
 
@@ -41,6 +42,7 @@
 #define FLYING_SPEED 350.0f
 
 #define FLYING_DURATUIN 0.25f
+#define TIME_BEFORE_GAME_OVER 2.0f
 
 enum GameStates{
     READY,

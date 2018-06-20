@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include "GameState.h"
-#include "DEFINITIONS.h"
+#include "GameOverState.h"
 
 
 GameState::GameState(GameDataRef data) : data(data) {
@@ -16,6 +16,7 @@ void GameState::init() {
     data->assetManager.loadTexture("Bird 1", BIRD_FRAME_1_FILEPATH);
     data->assetManager.loadTexture("Scoring Pipe", SCORING_PIPE_FILEPATH);
     data->assetManager.loadFont("Font", FONT_FILEPATH);
+    data->assetManager.loadFont("Game Over", GAME_OVER_FILEPATH);
 
 
     pipe = new Pipe(data);
@@ -68,6 +69,7 @@ void GameState::update(float dt) {
         for (size_t i = 0; i < groundSprite.size(); ++i) {
             if (collision.checkSpriteCollision(bird->getSprite(), 0.6f, groundSprite.at(i), 1.0f)) {
                 gameState = GameStates::GAMEOVER;
+                clock.restart();
             }
         }
 
@@ -88,9 +90,18 @@ void GameState::update(float dt) {
 
                 }
             }
+
+        }
+
+    }
+    if(GameStates::GAMEOVER == gameState) {
+        if (clock.getElapsedTime().asSeconds() > TIME_BEFORE_GAME_OVER) {
+            this->data->stateMachine.addState(StateRef(new GameOverState(data)), true);
         }
     }
+
 }
+
 
 void GameState::draw(float dt) {
     data->window.clear();

@@ -8,6 +8,8 @@
 #include "AssetManager.h"
 #include "InputManager.h"
 
+
+
 struct GameData{
     StateMachine stateMachine;
     sf::RenderWindow window;
@@ -15,7 +17,10 @@ struct GameData{
     InputManager inputManager;
 
 };
+
 typedef std::shared_ptr<GameData> GameDataRef;
+
+
 class Game {
 public:
     Game(int width, int height, std::string title);

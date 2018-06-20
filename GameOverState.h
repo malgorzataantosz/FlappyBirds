@@ -9,17 +9,19 @@ class GameOverState : public State {
 public:
     explicit GameOverState(GameDataRef data);
 
-    void init();
+    void init() override ;
 
-    void handleInput();
+    void handleInput() override ;
 
-    void update();
+    void update(float dt) override ;
 
-    void draw();
+    void draw(float dt) ;
 
 private:
     GameDataRef data;
     sf::Sprite background;
+    sf::Sprite gameOver;
+    sf::Sprite restartButton;
 
 };
 
