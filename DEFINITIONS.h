@@ -6,27 +6,27 @@
 
 #define INTRO_STATE_SHOW_TIME 3.0
 
-#define INTRO_SCENE_BACKGROUND_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/intro.png"
+#define INTRO_SCENE_BACKGROUND_FILEPATH "Resources/res/intro.png"
 
-#define MAIN_MENU_BACKGROUND_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/sky.png"
+#define MAIN_MENU_BACKGROUND_FILEPATH "Resources/res/sky.png"
 
-#define GAME_BACKGROUND_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/sky.png"
-#define GAME_OVER_BACKGROUND_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/sky.png"
+#define GAME_BACKGROUND_FILEPATH "Resources/res/sky.png"
+#define GAME_OVER_BACKGROUND_FILEPATH "Resources/res/sky.png"
 
-#define GAME_TITLE_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/title.png"
+#define GAME_TITLE_FILEPATH "Resources/res/title.png"
 
-#define PLAY_BUTTON_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/button.png"
+#define PLAY_BUTTON_FILEPATH "Resources/res/button.png"
 
-#define PIPE_UP_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/PipeUp.png"
-#define PIPE_DOWN_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/PipeDown.png"
+#define PIPE_UP_FILEPATH "Resources/res/PipeUp.png"
+#define PIPE_DOWN_FILEPATH "Resources/res/PipeDown.png"
 
-#define GROUND_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/Ground.png"
+#define GROUND_FILEPATH "Resources/res/Ground.png"
 
-#define BIRD_FRAME_1_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/bird.png"
+#define BIRD_FRAME_1_FILEPATH "Resources/res/bird.png"
 
-#define SCORING_PIPE_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/res/InvisibleScoringPipe.png"
+#define SCORING_PIPE_FILEPATH "Resources/res/InvisibleScoringPipe.png"
 
-#define FONT_FILEPATH "/home/malgorzata/clion/FlappyBirds/Resources/fonts/font.ttf"
+#define FONT_FILEPATH "Resources/fonts/font.ttf"
 
 //experimental number
 #define PIPE_MOVEMENT_SPEED 200.0f

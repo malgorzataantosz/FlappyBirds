@@ -66,14 +66,14 @@ void GameState::update(float dt) {
         bird->update(dt);
         std::vector<sf::Sprite> groundSprite = ground->getSprite();
         for (size_t i = 0; i < groundSprite.size(); ++i) {
-            if (collision.checkSpriteCollision(bird->getSprite(), 0.7f, groundSprite.at(i), 1.0f)) {
+            if (collision.checkSpriteCollision(bird->getSprite(), 0.6f, groundSprite.at(i), 1.0f)) {
                 gameState = GameStates::GAMEOVER;
             }
         }
 
         std::vector<sf::Sprite> pipes = pipe->getSprites();
         for (size_t i = 0; i < pipes.size(); ++i) {
-            if (collision.checkSpriteCollision(bird->getSprite(), 0.525f, pipes.at(i), 1.0f)) {
+            if (collision.checkSpriteCollision(bird->getSprite(), 0.7f, pipes.at(i), 1.0f)) {
                 gameState = GameStates::GAMEOVER;
                 clock.restart();
             }
@@ -81,7 +81,7 @@ void GameState::update(float dt) {
         if (GameStates::PLAY == gameState) {
             std::vector<sf::Sprite> &scoringSprites = pipe->getScoringSprites();
             for (size_t i = 0; i < scoringSprites.size(); ++i) {
-                if (collision.checkSpriteCollision(bird->getSprite(), 0.525f, scoringSprites.at(i), 1.0f)) {
+                if (collision.checkSpriteCollision(bird->getSprite(), 0.7f, scoringSprites.at(i), 1.0f)) {
                     score++;
                     hud->updateScore(score);
                     scoringSprites.erase(scoringSprites.begin() + i);
